@@ -15,23 +15,6 @@
 		A53EB65A254A614A002BD3E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53EB658254A614A002BD3E4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A53EB661254A614B002BD3E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A53EB642254A614A002BD3E4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A53EB649254A614A002BD3E4;
-			remoteInfo = "I Am Rich";
-		};
-		A53EB66C254A614B002BD3E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A53EB642254A614A002BD3E4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A53EB649254A614A002BD3E4;
-			remoteInfo = "I Am Rich";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		A53EB64A254A614A002BD3E4 /* I Am Rich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I Am Rich.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53EB64D254A614A002BD3E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,26 +24,10 @@
 		A53EB656254A614A002BD3E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A53EB659254A614A002BD3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A53EB65B254A614A002BD3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A53EB660254A614B002BD3E4 /* I Am RichTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "I Am RichTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A53EB66B254A614B002BD3E4 /* I Am RichUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "I Am RichUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A53EB647254A614A002BD3E4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A53EB65D254A614B002BD3E4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A53EB668254A614B002BD3E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,8 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				A53EB64A254A614A002BD3E4 /* I Am Rich.app */,
-				A53EB660254A614B002BD3E4 /* I Am RichTests.xctest */,
-				A53EB66B254A614B002BD3E4 /* I Am RichUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,42 +87,6 @@
 			productReference = A53EB64A254A614A002BD3E4 /* I Am Rich.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A53EB65F254A614B002BD3E4 /* I Am RichTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A53EB677254A614B002BD3E4 /* Build configuration list for PBXNativeTarget "I Am RichTests" */;
-			buildPhases = (
-				A53EB65C254A614B002BD3E4 /* Sources */,
-				A53EB65D254A614B002BD3E4 /* Frameworks */,
-				A53EB65E254A614B002BD3E4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A53EB662254A614B002BD3E4 /* PBXTargetDependency */,
-			);
-			name = "I Am RichTests";
-			productName = "I Am RichTests";
-			productReference = A53EB660254A614B002BD3E4 /* I Am RichTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A53EB66A254A614B002BD3E4 /* I Am RichUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A53EB67A254A614B002BD3E4 /* Build configuration list for PBXNativeTarget "I Am RichUITests" */;
-			buildPhases = (
-				A53EB667254A614B002BD3E4 /* Sources */,
-				A53EB668254A614B002BD3E4 /* Frameworks */,
-				A53EB669254A614B002BD3E4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A53EB66D254A614B002BD3E4 /* PBXTargetDependency */,
-			);
-			name = "I Am RichUITests";
-			productName = "I Am RichUITests";
-			productReference = A53EB66B254A614B002BD3E4 /* I Am RichUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -169,14 +98,6 @@
 				TargetAttributes = {
 					A53EB649254A614A002BD3E4 = {
 						CreatedOnToolsVersion = 12.1;
-					};
-					A53EB65F254A614B002BD3E4 = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = A53EB649254A614A002BD3E4;
-					};
-					A53EB66A254A614B002BD3E4 = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = A53EB649254A614A002BD3E4;
 					};
 				};
 			};
@@ -194,8 +115,6 @@
 			projectRoot = "";
 			targets = (
 				A53EB649254A614A002BD3E4 /* I Am Rich */,
-				A53EB65F254A614B002BD3E4 /* I Am RichTests */,
-				A53EB66A254A614B002BD3E4 /* I Am RichUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -208,20 +127,6 @@
 				A53EB65A254A614A002BD3E4 /* LaunchScreen.storyboard in Resources */,
 				A53EB657254A614A002BD3E4 /* Assets.xcassets in Resources */,
 				A53EB655254A614A002BD3E4 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A53EB65E254A614B002BD3E4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A53EB669254A614B002BD3E4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,34 +143,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A53EB65C254A614B002BD3E4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A53EB667254A614B002BD3E4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A53EB662254A614B002BD3E4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A53EB649254A614A002BD3E4 /* I Am Rich */;
-			targetProxy = A53EB661254A614B002BD3E4 /* PBXContainerItemProxy */;
-		};
-		A53EB66D254A614B002BD3E4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A53EB649254A614A002BD3E4 /* I Am Rich */;
-			targetProxy = A53EB66C254A614B002BD3E4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A53EB653254A614A002BD3E4 /* Main.storyboard */ = {
@@ -410,6 +288,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "I Am Rich/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,6 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "I Am Rich/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,86 +316,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		A53EB678254A614B002BD3E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "I Am RichTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.I-Am-RichTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/I Am Rich.app/I Am Rich";
-			};
-			name = Debug;
-		};
-		A53EB679254A614B002BD3E4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "I Am RichTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.I-Am-RichTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/I Am Rich.app/I Am Rich";
-			};
-			name = Release;
-		};
-		A53EB67B254A614B002BD3E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "I Am RichUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.I-Am-RichUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "I Am Rich";
-			};
-			name = Debug;
-		};
-		A53EB67C254A614B002BD3E4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "I Am RichUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.I-Am-RichUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "I Am Rich";
 			};
 			name = Release;
 		};
@@ -536,24 +336,6 @@
 			buildConfigurations = (
 				A53EB675254A614B002BD3E4 /* Debug */,
 				A53EB676254A614B002BD3E4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A53EB677254A614B002BD3E4 /* Build configuration list for PBXNativeTarget "I Am RichTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A53EB678254A614B002BD3E4 /* Debug */,
-				A53EB679254A614B002BD3E4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A53EB67A254A614B002BD3E4 /* Build configuration list for PBXNativeTarget "I Am RichUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A53EB67B254A614B002BD3E4 /* Debug */,
-				A53EB67C254A614B002BD3E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
