@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,20 +15,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I Am Poor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRh-m2-DVi">
-                                <rect key="frame" x="125" y="183" width="164" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am Poor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRh-m2-DVi">
+                                <rect key="frame" x="134.5" y="186.5" width="164" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="0.41568627450000001" green="0.83529411760000005" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.98039215690000003" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coal" translatesAutoresizingMaskIntoConstraints="NO" id="ARy-5t-gc6">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="coal" translatesAutoresizingMaskIntoConstraints="NO" id="ARy-5t-gc6">
                                 <rect key="frame" x="20" y="333" width="374" height="269"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="269" id="wY0-zG-iAz"/>
+                                </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="creditcard.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jS7-wB-h7D">
+                                <rect key="frame" x="356" y="136" width="38" height="36"/>
+                                <color key="tintColor" red="0.82352941180000006" green="0.68235294120000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39.5" id="YfX-10-DNU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Ask Me For Money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1l-3A-w5P">
+                                <rect key="frame" x="11" y="136.5" width="337" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.93086236720000004" green="0.97548955680000005" blue="0.95555990930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.88235294119999996" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jS7-wB-h7D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90.5" id="4Gr-yY-5wL"/>
+                            <constraint firstItem="oRh-m2-DVi" firstAttribute="top" secondItem="m1l-3A-w5P" secondAttribute="bottom" constant="11" id="8Gv-bK-awl"/>
+                            <constraint firstItem="ARy-5t-gc6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JmM-FJ-Z9v"/>
+                            <constraint firstItem="ARy-5t-gc6" firstAttribute="centerX" secondItem="oRh-m2-DVi" secondAttribute="centerX" id="Kcp-9g-rn2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jS7-wB-h7D" secondAttribute="trailing" constant="1" id="LS2-qM-vG8"/>
+                            <constraint firstItem="m1l-3A-w5P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="11" id="VV1-49-O3n"/>
+                            <constraint firstItem="jS7-wB-h7D" firstAttribute="baseline" secondItem="m1l-3A-w5P" secondAttribute="baseline" id="WAd-qa-eEK"/>
+                            <constraint firstItem="jS7-wB-h7D" firstAttribute="trailing" secondItem="ARy-5t-gc6" secondAttribute="trailing" id="ew9-bj-hqt"/>
+                            <constraint firstItem="ARy-5t-gc6" firstAttribute="top" secondItem="oRh-m2-DVi" secondAttribute="bottom" constant="98.5" id="rBz-1n-jhJ"/>
+                            <constraint firstItem="jS7-wB-h7D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="urs-80-eoZ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -39,8 +64,6 @@
     </scenes>
     <resources>
         <image name="coal" width="151" height="128"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="creditcard.fill" catalog="system" width="128" height="88"/>
     </resources>
 </document>
