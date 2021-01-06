@@ -16,8 +16,11 @@ class ViewController: UIViewController {
     
     var timer = Timer()
     
+    @IBOutlet weak var TimeCounter: UILabel!
     @IBOutlet weak var EggLabel: UILabel!
     @IBAction func hardnessSelected(_ sender: UIButton) {
+        
+        EggLabel.text = "How do you like your eggs?"
         
         timer.invalidate()
         
@@ -32,9 +35,12 @@ class ViewController: UIViewController {
     @objc func updateTimer(){
         if secondsRemaining > 0 {
             print("\(secondsRemaining) seconds.")
+            TimeCounter.text = String(secondsRemaining)
             secondsRemaining -= 1
         } else {
-            self.EggLabel.text = "Eggs are done!"
+            timer.invalidate()
+            self.EggLabel.text = "Done!"
+            TimeCounter.text = "Times Up!"
         }
     }
 }
