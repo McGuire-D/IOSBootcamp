@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -122,14 +123,27 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJN-th-c5K" userLabel="Timer View">
                                         <rect key="frame" x="0.0" y="571.5" width="374" height="246.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIN-ZO-nvG">
-                                                <rect key="frame" x="107" y="74" width="151" height="85"/>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tes-Yz-T3x">
+                                                <rect key="frame" x="0.0" y="118" width="374" height="11"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="lur-Rz-dgG"/>
+                                                </constraints>
+                                                <color key="progressTintColor" systemColor="systemYellowColor"/>
+                                                <color key="trackTintColor" systemColor="systemGray2Color"/>
+                                            </progressView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIN-ZO-nvG">
+                                                <rect key="frame" x="106" y="0.0" width="151" height="85"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="tes-Yz-T3x" firstAttribute="centerY" secondItem="nJN-th-c5K" secondAttribute="centerY" id="7Nm-gg-KXR"/>
+                                            <constraint firstAttribute="trailing" secondItem="tes-Yz-T3x" secondAttribute="trailing" id="GyJ-og-XWH"/>
+                                            <constraint firstItem="tes-Yz-T3x" firstAttribute="leading" secondItem="nJN-th-c5K" secondAttribute="leading" id="fUU-88-7gz"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -145,6 +159,7 @@
                     </view>
                     <connections>
                         <outlet property="EggLabel" destination="XLm-5r-pSP" id="Mya-9b-oOx"/>
+                        <outlet property="ProgressBar" destination="tes-Yz-T3x" id="a5D-6a-UgK"/>
                         <outlet property="TimeCounter" destination="AIN-ZO-nvG" id="fPL-6k-Avf"/>
                     </connections>
                 </viewController>
@@ -157,5 +172,11 @@
         <image name="hard_egg" width="287.5" height="366"/>
         <image name="medium_egg" width="288" height="363"/>
         <image name="soft_egg" width="287" height="365"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
