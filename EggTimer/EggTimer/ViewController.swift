@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     var timer = Timer()
     var totalTime = 0
     var secondsPassed = 0
-    var secondsRemaining = 0
+    //var secondsRemaining = 0
     @IBOutlet weak var TimeCounter: UILabel!
     @IBOutlet weak var EggLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
@@ -22,24 +22,26 @@ class ViewController: UIViewController {
         
         EggLabel.text = "How do you like your eggs?"
         timer.invalidate()
-        
         let hardness = sender.currentTitle! //Soft, Medium, Hard
+        totalTime = eggTimes[hardness]!
         
-        secondsRemaining = eggTimes[hardness]!
-        
+        progressBar.progress = 0.0
+        secondsPassed = 0
+        EggLabel.text = hardness
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
         
         }
     
     @objc func updateTimer(){
         if secondsPassed < totalTime {
-            
-            let percentageProgress = secondsPassed / totalTime
-            progressBar.progress = Float(percentageProgress)
             secondsPassed += 1
+            progressBar.progress = Float(secondsPassed) / Float(totalTime)
+           
+            
+            
         } else {
             timer.invalidate()
-            self.EggLabel.text = "Done!"
+            EggLabel.text = "Done!"
         }
     }
 }
