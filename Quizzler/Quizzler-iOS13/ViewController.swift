@@ -36,12 +36,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        progressBar.setProgress(0, animated: true)
         // Do any additional setup after loading the view.
         updateUI()
     }
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         let userAnswer = sender.currentTitle // True, False
         let actaulAnswer = quiz[questionNumber].answer
+        var status:Float = progressBar.setProgress(0.00001, animated: true)
         
         if userAnswer == actaulAnswer{
             print("Right")
@@ -59,7 +61,11 @@ class ViewController: UIViewController {
             questionNumber = 0
         }
        Timer.scheduledTimer(timeInterval: 1.0, target:self, selector: #selector(updateUI), userInfo: nil, repeats: false)
-       
+        if questionNumber > 0 {
+            status + 0.0833333 = status
+        } else {
+            status = 0
+        }
     }
     
         
@@ -69,6 +75,7 @@ class ViewController: UIViewController {
         questionLabel.text = quiz[questionNumber].text
         trueButton.backgroundColor = UIColor.clear
         falseButton.backgroundColor = UIColor.clear
+            
     }
 
 }
