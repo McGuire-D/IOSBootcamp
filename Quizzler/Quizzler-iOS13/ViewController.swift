@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
+    @IBOutlet weak var answerText: UILabel!
     
     let quiz = [
         Question(q: "A slug's blood is green.", a: "True"),
@@ -43,8 +44,10 @@ class ViewController: UIViewController {
         
         if userAnswer == actaulAnswer{
             print("Right")
+            answerText.text = "Right"
         }else{
             print("Wrong")
+            answerText.text = "Wrong"
         }
         
         if questionNumber + 1 < quiz.count{
