@@ -102,3 +102,16 @@ func greeting1(){
 }
 
 greeting1()
+
+func greeting3(whoToGreet: String){
+    print("Hello \(whoToGreet)")
+}
+
+greeting3(whoToGreet: "Billy")
+
+==
+
+
+
+
+
