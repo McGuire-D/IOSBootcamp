@@ -109,9 +109,58 @@ func greeting3(whoToGreet: String){
 
 greeting3(whoToGreet: "Billy")
 
-==
+func loveCalculator() {
+    let loveScore = Int.random(in: 0 ... 100)
+    
+    if loveScore > 80 {
+        print("You love each other like Kanye loves Kanye")
+    } else if loveScore > 40 {
+        print("You like pizza")
+    } else {
+        print("I love pizza")
+    }
+}
+
+loveCalculator()
 
 
+var aYear =  2020
+
+func isLeap(_ year: Int) {
+  
+  if year / 4 == 0 && year / 100 == 0 && year / 400 == 0 {
+     print("Is Leap Year")
+  } else {
+      print("Not leap year")
+  }
+  
+  
+  
+}
+isLeap(aYear)
 
 
+func loveCalculatorCase() {
+    let loveScore = Int.random(in: 0 ... 100)
+    
+    switch loveScore {
+    case 80...100:
+        print("Greater than 80")
+    case 40..<80:
+        print("Its okay")
+    case ...40:
+        print("Whatever")
+    default:
+        print("Eat your dinner")
+    }
+}
+loveCalculatorCase()
 
+
+var player1Username: String? = nil
+
+if player1Username != nil {
+    print(player1Username!)
+} else {
+    print("Fuck off and move on")
+}
