@@ -17,37 +17,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="500" verticalCompressionResistancePriority="1000" image="Background-Bubbles" translatesAutoresizingMaskIntoConstraints="NO" id="eGL-jB-Wwb">
-                                <rect key="frame" x="20" y="760" width="374" height="102"/>
+                                <rect key="frame" x="0.0" y="794" width="414" height="102"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="HtA-TY-BAC">
                                 <rect key="frame" x="20" y="44" width="374" height="798"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="1000" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-li-mhO">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="597.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="594"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVw-Hl-IRe">
-                                        <rect key="frame" x="0.0" y="618.5" width="374" height="68"/>
+                                        <rect key="frame" x="0.0" y="615" width="374" height="68"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="True" backgroundImage="Rectangle">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fsm-uo-PfP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbn-vQ-GyC">
-                                        <rect key="frame" x="0.0" y="707.5" width="374" height="68"/>
+                                        <rect key="frame" x="0.0" y="704" width="374" height="68"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="False" backgroundImage="Rectangle">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tzM-Nr-44C"/>
+                                        </connections>
                                     </button>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="TXm-qh-7Xg">
-                                        <rect key="frame" x="0.0" y="796.5" width="374" height="2.5"/>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TXm-qh-7Xg">
+                                        <rect key="frame" x="0.0" y="793" width="374" height="6"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.2770131528" green="0.3800790906" blue="0.57570761439999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="mUr-MR-75h"/>
+                                        </constraints>
                                         <color key="progressTintColor" red="1" green="0.45854175089999999" blue="0.6605013609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </progressView>
@@ -58,14 +67,20 @@
                         <color key="backgroundColor" red="0.14509803921568626" green="0.17254901960784313" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="HtA-TY-BAC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8uc-DS-8iv"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="eGL-jB-Wwb" secondAttribute="bottom" id="Kk3-KF-TvY"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="eGL-jB-Wwb" secondAttribute="bottom" constant="-34" id="Kk3-KF-TvY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HtA-TY-BAC" secondAttribute="trailing" constant="20" id="MBK-Bg-4qp"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="eGL-jB-Wwb" secondAttribute="leading" id="NjL-Kf-raj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eGL-jB-Wwb" secondAttribute="trailing" id="WOX-GI-oOJ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="eGL-jB-Wwb" secondAttribute="leading" constant="20" id="NjL-Kf-raj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eGL-jB-Wwb" secondAttribute="trailing" constant="-20" id="WOX-GI-oOJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HtA-TY-BAC" secondAttribute="bottom" constant="20" id="hP8-4D-cgv"/>
                             <constraint firstItem="HtA-TY-BAC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sSu-Ef-HCq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="falseButton" destination="tbn-vQ-GyC" id="7t2-de-RaI"/>
+                        <outlet property="progressBar" destination="TXm-qh-7Xg" id="Ko2-Ms-XGp"/>
+                        <outlet property="questionLabel" destination="rSI-li-mhO" id="fyv-bk-UvP"/>
+                        <outlet property="trueButton" destination="oVw-Hl-IRe" id="ZOD-jy-yvQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
