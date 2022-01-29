@@ -172,3 +172,30 @@ let numbers = [
 ]
 
 print(numbers[2][2])
+
+
+struct Town {
+    let name: String
+    var citizens: [String]
+    var resources: [String: Int]
+    
+    func fortify(){
+        print("Defences increased!")
+    }
+    init(name: String, citizens: [String], resources: [String: Int]){
+        self.name = name
+        self.citizens = citizens
+        self.resources = resources
+        
+    }
+}
+
+var anotherTown = Town(name: "Jimoretha Ville", citizens: ["Tom Hanks"], resources: ["Coconuts" : 100])
+
+anotherTown.citizens.append("Wilson")
+
+print(anotherTown)
+
+var ghostTown = Town(name: "Ghosty McGhostface", citizens: [], resources: ["Tumbleweed" : 1])
+
+print(ghostTown)
