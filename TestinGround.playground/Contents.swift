@@ -199,3 +199,14 @@ print(anotherTown)
 var ghostTown = Town(name: "Ghosty McGhostface", citizens: [], resources: ["Tumbleweed" : 1])
 
 print(ghostTown)
+
+
+func isOdd(n: Int) -> Bool{
+    if n / 2 != 0 {
+        return true
+    } else {
+        return false
+    }
+}
+
+isOdd(n: 17)
